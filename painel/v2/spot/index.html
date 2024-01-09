@@ -1048,3 +1048,67 @@ new Vue({
   </a>
 </div>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Janelas com Javascript</title>
+<script src="https://rawcdn.githack.com/nextapps-de/winbox/0.1.8/dist/winbox.bundle.js"></script>
+<style>
+  body {
+    margin: 0; /* Remove margens padrão do corpo da página */
+    padding: 0; /* Remove preenchimento padrão do corpo da página */
+  }
+  
+  #content {
+    display: none;
+    padding: 10px;
+    color: black;
+    margin-bottom: 50px; /* Ajusta a margem inferior para acomodar o rodapé */
+  }
+
+  #openButton {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff00; /* Cor de fundo para distinguir do conteúdo principal */
+  }
+
+  #openButton img {
+    margin-right: 10px; /* Reduzi a margem para melhor ajuste */
+    width: 50px;
+    height: auto;
+  }
+</style>
+</head>
+<body>
+<div id="content">
+  <h1></h1>
+  <h3></h3>
+  <p></p>
+  <p></p>
+  <h3>Acesse: <a href="https://betabot.store/">www.betabot.store</a></h3> 
+  <h3>Telegram: <a href="https://t.me/BETABOTROMPIMENTO">@Betabotrompimento</a></h3>
+</div>
+
+<button id="openButton" onclick="OpenWindow()">
+  <img src="https://img3.gratispng.com/dy/63ff88c77321f902d40a8f21a75ed20c/L0KzQYm3VsE3N51wiJH0aYP2gLBuTgF2baR5gdH3LXTyhbP7TfJ2e5pzfeV8LXB1d7L1igpifJp0hp97b3zvPcb3TfJidp9qReV5ZXXmeH7pgf5vbaMyTdQ7NUPkdYnrg8g3PmYzUaQ7MEG0RYq4VcI6OWc7TagDOUC2Q3B3jvc=/kisspng-question-doubt-business-organization-roll-up-banne-speech-banner-5b253ae8dc8665.9220115915291665689033.png" alt="Ícone">
+</button>
+
+<script>
+function OpenWindow(){
+  document.getElementById("content").style.display = "block"; 
+  var node = document.getElementById("content");
+
+  new WinBox("DÚVIDA", {
+      mount: node.cloneNode(true)
+  });
+  document.getElementById("content").style.display = "none"; 
+}
+</script>
+</body>
+</html>
