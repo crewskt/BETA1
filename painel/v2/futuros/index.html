@@ -574,25 +574,25 @@ input, button, select, option, textarea {
       <div class="dropdown">
         <div class="form-input text-nowrap shadow-box">▼ {{ limit }}</div>
         <ul>
-          <li @click="setLimit( 0 )"><span class="text-faded">Mostrar:</span> Todos</li>
-          <li @click="setLimit( 10 )"><span class="text-faded">Mostrar:</span> 10</li>
-          <li @click="setLimit( 20 )"><span class="text-faded">Mostrar</span> 20</li>
-          <li @click="setLimit( 50 )"><span class="text-faded">Mostrar:</span> 50</li>
-          <li @click="setLimit( 100 )"><span class="text-faded">Mostrar:</span> 100</li>
-          <li @click="setLimit( 200 )"><span class="text-faded">Mostrar:</span> 200</li>
-          <li @click="setLimit( 300 )"><span class="text-faded">Mostrar:</span> 300</li>
+          <li @click="setLimit( 300 )"><span class="text-faded">Most:</span> Todos</li>
+          <li @click="setLimit( 10 )"><span class="text-faded">Most:</span> 10</li>
+          <li @click="setLimit( 20 )"><span class="text-faded">Most</span> 20</li>
+          <li @click="setLimit( 50 )"><span class="text-faded">Most:</span> 50</li>
+          <li @click="setLimit( 100 )"><span class="text-faded">Most:</span> 100</li>
+          <li @click="setLimit( 200 )"><span class="text-faded">Most:</span> 200</li>
+          <li @click="setLimit( 300 )"><span class="text-faded">Most:</span> 300</li>
         </ul>
       </div>
       <div class="dropdown">
         <div class="form-input text-nowrap shadow-box">▼ {{ sortLabel }}</div>
         <ul>
-         <!-- <li @click="sortBy( 'token', 'asc' )"><span class="text-faded">Ordenar:</span> Token</li>-->
-          <li @click="sortBy( 'close', 'desc' )"><span class="text-faded">Ordenar:</span> Preço</li>
-          <li @click="sortBy( 'assetVolume', 'desc' )"><span class="text-faded">Ordenar:</span> Volume</li>
-           <li @click="sortBy( 'percent', 'desc' )"><span class="text-faded">Ordenar:</span> Porcentagem</li>
-          <!--<li @click="sortBy( 'change', 'desc' )"><span class="text-faded">Ordenar:</span> Change</li>-->
-          <li @click="sortBy( 'trades', 'desc' )"><span class="text-faded">Ordenar:</span> Top Trades</li>
-          <li @click="sortBy( 'volatility', 'desc' )"><span class="text-faded">Ordenar:</span> Volatilidade</li>
+         <!-- <li @click="sortBy( 'token', 'asc' )"><span class="text-faded">Ord:</span> Token</li>-->
+          <li @click="sortBy( 'close', 'desc' )"><span class="text-faded">Ord:</span> Preço</li>
+          <li @click="sortBy( 'assetVolume', 'desc' )"><span class="text-faded">Ord:</span> Volume</li>
+           <li @click="sortBy( 'percent', 'desc' )"><span class="text-faded">Ord:</span> Porcentagem</li>
+          <!--<li @click="sortBy( 'change', 'desc' )"><span class="text-faded">Ord:</span> Change</li>-->
+          <li @click="sortBy( 'trades', 'desc' )"><span class="text-faded">Ord:</span> TopTrades</li>
+          <li @click="sortBy( 'volatility', 'desc' )"><span class="text-faded">Ord:</span> Volatilidade</li>
         </ul>
       </div>
       <div class="dropdown">
@@ -623,7 +623,7 @@ input, button, select, option, textarea {
               <h2 class="text-bright text-clip">{{ c.close | toFixed( asset ) }}</h2>
              <h2 class="color text-big">{{ c.arrow }} {{ c.sign }}{{ c.percent | toFixed( 2 ) }}%</h2> 
  <!--<div class="text-clip">{{ c.sign }}{{ c.change | toFixed( asset ) }} <small class="text-faded">24h</small></div>-->
-  <h5 class="text-bright text-clip">${{ c.assetVolume | toMoney }} <small class="text-bright">Vol</small></h5>
+  <h5 class="text-bright text-clip">${{ c.assetVolume | toMoney }} <small class="text-bright">Volume</small></h5>
               <h5 class="text-bright text-clip">{{ c.arrow2 }} {{ c.volatility | toFixed( 2 ) }}% <small class="text-bright">Volatilidade</small></h5>
             </div>
  
