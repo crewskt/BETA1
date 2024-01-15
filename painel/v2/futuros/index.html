@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Futuros Binance - betabot.store</title>
   <link rel="stylesheet" href="./style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=0.9">
+  <meta name="viewport" content="width=device-width, initial-scale=0.6">
 </head>
 
 
@@ -46,25 +46,25 @@
       <div class="dropdown">
         <div class="form-input text-nowrap shadow-box">▼ {{ limit }}</div>
         <ul>
-          <li @click="setLimit( 300 )"><span class="text-faded">Most:</span> Todos</li>
-          <li @click="setLimit( 10 )"><span class="text-faded">Most:</span> 10</li>
-          <li @click="setLimit( 20 )"><span class="text-faded">Most</span> 20</li>
-          <li @click="setLimit( 50 )"><span class="text-faded">Most:</span> 50</li>
-          <li @click="setLimit( 100 )"><span class="text-faded">Most:</span> 100</li>
-          <li @click="setLimit( 200 )"><span class="text-faded">Most:</span> 200</li>
-          <li @click="setLimit( 300 )"><span class="text-faded">Most:</span> 300</li>
+          <li @click="setLimit( 300 )"><span class="text-faded"></span> Todos</li>
+          <li @click="setLimit( 10 )"><span class="text-faded"></span> 10</li>
+          <li @click="setLimit( 20 )"><span class="text-faded"></span> 20</li>
+          <li @click="setLimit( 50 )"><span class="text-faded"></span> 50</li>
+          <li @click="setLimit( 100 )"><span class="text-faded"></span> 100</li>
+          <li @click="setLimit( 200 )"><span class="text-faded"></span> 200</li>
+          <li @click="setLimit( 300 )"><span class="text-faded"></span> 300</li>
         </ul>
       </div>
       <div class="dropdown">
         <div class="form-input text-nowrap shadow-box">▼ {{ sortLabel }}</div>
         <ul>
          <!-- <li @click="sortBy( 'token', 'asc' )"><span class="text-faded">Ord:</span> Token</li>-->
-          <li @click="sortBy( 'close', 'desc' )"><span class="text-faded">Ord:</span> Preço</li>
-          <li @click="sortBy( 'assetVolume', 'desc' )"><span class="text-faded">Ord:</span> Volume</li>
-           <li @click="sortBy( 'percent', 'desc' )"><span class="text-faded">Ord:</span> Porcentagem</li>
+          <li @click="sortBy( 'close', 'desc' )"><span class="text-faded"></span> Preço</li>
+          <li @click="sortBy( 'assetVolume', 'desc' )"><span class="text-faded"></span> Volume</li>
+           <li @click="sortBy( 'percent', 'desc' )"><span class="text-faded"></span> Porcentagem</li>
           <!--<li @click="sortBy( 'change', 'desc' )"><span class="text-faded">Ord:</span> Change</li>-->
-          <li @click="sortBy( 'trades', 'desc' )"><span class="text-faded">Ord:</span> TopTrades</li>
-          <li @click="sortBy( 'volatility', 'desc' )"><span class="text-faded">Ord:</span> Volatilidade</li>
+          <li @click="sortBy( 'trades', 'desc' )"><span class="text-faded"></span> TopTrades</li>
+          <li @click="sortBy( 'volatility', 'desc' )"><span class="text-faded"></span> Volatilidade</li>
         </ul>
       </div>
       <div class="dropdown">
