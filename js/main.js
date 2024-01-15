@@ -1,7 +1,7 @@
 AOS.init({
   once: true,
   disable: 'phone',
-  duration: 1000,
+  duration: 100,
   easing: 'ease-out-cubic',
 });
 
@@ -10,14 +10,14 @@ if (clientsEl.length > 0) {
   const clients = new Swiper('.clients-carousel', {
     slidesPerView: 'auto',
     spaceBetween: 64,
-    centeredSlides: true,
-    loop: true,
+    centeredSlides: false,
+    loop: false,
     speed: 5000,
-    noSwiping: true,
+    noSwiping: false,
     noSwipingClass: 'swiper-slide',
     autoplay: {
       delay: 0,
-      disableOnInteraction: true,
+      disableOnInteraction: false,
     },
   });
 }
@@ -36,7 +36,7 @@ if (carouselEl.length > 0) {
         slidesPerView: 3
       }
     },
-    grabCursor: true,
+    grabCursor: false,
     loop: false,
     centeredSlides: false,
     initialSlide: 0,
@@ -50,11 +50,11 @@ if (carouselEl.length > 0) {
 
 // Particle animation
 class ParticleAnimation {
-  constructor(el, { quantity = 30, staticity = 50, ease = 50 } = {}) {
+  constructor(el, { quantity = 0, staticity = 0, ease = 0 } = {}) {
     this.canvas = el;
     if (!this.canvas) return;
     this.canvasContainer = this.canvas.parentElement;
-    this.context = this.canvas.getContext('2d');
+    this.context = this.canvas.getContext('0d');
     this.dpr = window.devicePixelRatio || 1;
     this.settings = {
       quantity: quantity,
